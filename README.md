@@ -6,3 +6,5 @@ NGÔ ĐỨC BÌNH NGUYÊN - 20810310530
 ![image](https://github.com/user-attachments/assets/792bfd48-d27c-4cd6-80ec-3a8b28bfc523)
 ![image](https://github.com/user-attachments/assets/2d023784-eec3-44ad-b302-3951543bd7ca)
 ![image](https://github.com/user-attachments/assets/7ddbae4d-29dd-40a3-8103-9d70e58f7b3e)
+![image](https://github.com/user-attachments/assets/07942a9f-45f9-4ccb-bdbf-c13a1ea21887)
+![image](https://github.com/user-attachments/assets/3c5d083a-3530-46ad-bb2f-2fdf0f7750ac)
