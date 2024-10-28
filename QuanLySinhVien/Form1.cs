@@ -180,5 +180,48 @@ namespace QuanLySinhVien
             dataGridView1.DataSource = layThongTinSinhVien().Tables[0];
         }
 
+        private DataTable TraCuuSinhVien(string maSinhVien)
+        {
+            DataTable data = new DataTable();
+            string query = "SELECT * FROM SinhVien WHERE MaSinhVien = @MaSinhVien";
+
+            using (SqlConnection con = new SqlConnection(KetNoi.chuoiKN))
+            {
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@MaSinhVien", maSinhVien);
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(data);
+                }
+            }
+
+            return data;
+        }
+
+        private void btnTraCuu_Click(object sender, EventArgs e)
+        {
+            string maSinhVien = tbMaSinhVien.Text;
+
+            // Kiểm tra mã sinh viên có được nhập không
+            if (string.IsNullOrEmpty(maSinhVien))
+            {
+                MessageBox.Show("Vui lòng nhập mã sinh viên để tra cứu.");
+                return;
+            }
+
+            DataTable sinhVienData = TraCuuSinhVien(maSinhVien);
+
+            if (sinhVienData.Rows.Count > 0)
+            {
+                // Hiển thị kết quả tra cứu trong DataGridView
+                dataGridView1.DataSource = sinhVienData;
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy thông tin sinh viên với mã đã nhập.");
+                // Xóa DataGridView nếu không tìm thấy
+                dataGridView1.DataSource = null; // Hoặc có thể set lại DataSource về một danh sách trống
+            }
+        }
     }
 }

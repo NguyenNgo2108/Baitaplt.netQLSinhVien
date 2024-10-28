@@ -22,3 +22,4 @@ C:\Users\nemol\source\repos\QuanLySinhVien\QuanLySinhVien\obj\Debug\net8.0-windo
 C:\Users\nemol\source\repos\QuanLySinhVien\QuanLySinhVien\obj\Debug\net8.0-windows\QuanLySinhVien.pdb
 C:\Users\nemol\source\repos\QuanLySinhVien\QuanLySinhVien\obj\Debug\net8.0-windows\QuanLySinhVien.genruntimeconfig.cache
 C:\Users\nemol\source\repos\QuanLySinhVien\QuanLySinhVien\obj\Debug\net8.0-windows\ref\QuanLySinhVien.dll
+C:\Users\nemol\source\repos\QuanLySinhVien\QuanLySinhVien\obj\Debug\net8.0-windows\QuanLySinhVien.sourcelink.json

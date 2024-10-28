@@ -44,6 +44,7 @@
             btnThem = new Button();
             groupBox3 = new GroupBox();
             dataGridView1 = new DataGridView();
+            btnTraCuu = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -146,6 +147,7 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(btnTraCuu);
             groupBox2.Controls.Add(btnXoa);
             groupBox2.Controls.Add(btnSua);
             groupBox2.Controls.Add(btnThem);
@@ -158,7 +160,7 @@
             // 
             // btnXoa
             // 
-            btnXoa.Location = new Point(89, 70);
+            btnXoa.Location = new Point(24, 70);
             btnXoa.Name = "btnXoa";
             btnXoa.Size = new Size(94, 29);
             btnXoa.TabIndex = 2;
@@ -206,6 +208,16 @@
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
+            // btnTraCuu
+            // 
+            btnTraCuu.Location = new Point(164, 70);
+            btnTraCuu.Name = "btnTraCuu";
+            btnTraCuu.Size = new Size(94, 29);
+            btnTraCuu.TabIndex = 3;
+            btnTraCuu.Text = "Tra cứu";
+            btnTraCuu.UseVisualStyleBackColor = true;
+            btnTraCuu.Click += btnTraCuu_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -243,5 +255,6 @@
         private Button btnSua;
         private Button btnThem;
         private DataGridView dataGridView1;
+        private Button btnTraCuu;
     }
 }
